@@ -27,6 +27,6 @@ parts:
       - cmake
 
   publish:
-    plugin: dump
+    plugin: copy
     files:
       ./bat: bin/bat
