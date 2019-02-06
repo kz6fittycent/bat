@@ -1,3 +1,5 @@
+[![Snap Status](https://build.snapcraft.io/badge/kz6fittycent/bat.svg)](https://build.snapcraft.io/user/kz6fittycent/bat)
+
 <p align="center">
   <img src="doc/logo-header.svg" alt="bat - a cat clone with wings"><br>
   <a href="https://travis-ci.org/sharkdp/bat"><img src="https://travis-ci.org/sharkdp/bat.svg?branch=master" alt="Build Status"></a>
