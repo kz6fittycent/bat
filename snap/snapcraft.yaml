@@ -20,12 +20,13 @@ parts:
     
     build-packages:
       - rustc
-
+      - cmake
       
     stage-packages:
       - rustc
+      - cmake
 
   publish:
-    plugin: copy
+    plugin: dump
     files:
       ./bat: bin/bat
