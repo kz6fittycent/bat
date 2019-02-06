@@ -19,11 +19,11 @@ parts:
     plugin: rust
     
     build-packages:
-      - rust
+      - rustc
 
       
     stage-packages:
-      - rust
+      - rustc
 
   publish:
     plugin: copy
