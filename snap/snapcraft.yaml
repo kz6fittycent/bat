@@ -1,0 +1,31 @@
+name: bat
+version: git
+summary: A cat clone with wings
+description: |
+  A cat clone with wings
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs
+
+apps:
+  bat:
+    command: $SNAP/bin/bat
+    plugs:
+      - home
+     
+parts: 
+  bat:
+    source: https://github.com/kz6fittycent/bat
+    source-type: git
+    plugin: rust
+    
+    build-packages:
+      - rust
+
+      
+    stage-packages:
+      - rust
+
+  publish:
+    plugin: copy
+    files:
+      ./bat: bin/bat
